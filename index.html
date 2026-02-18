@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chandana Groups</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f4f0f0;
+        }
+
+        .main-container {
+            background: linear-gradient(135deg, #1a0dab, #3f2bdb);
+            border-radius: 20px;
+            padding: 50px;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .signup-card {
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn-custom {
+            background-color: #ff5c7a;
+            color: white;
+            border-radius: 25px;
+        }
+
+        .btn-purple {
+            background-color: #3f2bdb;
+            color: white;
+            border-radius: 25px;
+        }
+
+        .btn-google {
+            background-color: #5a54e8;
+            color: white;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="main-container">
+
+        <!-- Navbar -->
+        <nav class="d-flex justify-content-between align-items-center mb-5">
+            <h4 class="fw-bold">Chandana Groups</h4>
+            <div>
+                <a href="#" class="text-white me-3 text-decoration-none">Overview</a>
+                <a href="#" class="text-white me-3 text-decoration-none">Price</a>
+                <a href="#" class="text-white me-3 text-decoration-none">Blog</a>
+                <a href="#" class="text-white me-3 text-decoration-none">Feedback</a>
+                <button class="btn btn-custom px-4">Purchase</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="row align-items-center">
+
+            <!-- Left Side -->
+            <div class="col-md-6 mb-4">
+                <h1 class="display-5 fw-bold mb-4">
+                    Generate Awesome <br> Web Pages
+                </h1>
+                <p class="mb-4">
+                    The most important part of the Startup is the samples.
+                    The samples form a set of 25 usable pages you can use as is
+                    or you can add new blocks.
+                </p>
+                <button class="btn btn-custom px-4 py-2">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Right Side Signup Card -->
+            <div class="col-md-5 offset-md-1">
+                <div class="signup-card">
+                    <h4 class="text-center mb-4">Sign Up Now</h4>
+
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <input type="email" class="form-control rounded-pill"
+                                placeholder="Your Email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="password" class="form-control rounded-pill"
+                                placeholder="Your Password" required>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label small">
+                                I agree to the terms of services
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-purple w-100 mb-3">
+                            Sign In
+                        </button>
+                    </form>
+
+                    <div class="text-center mb-2 small">or</div>
+
+                    <button class="btn btn-google w-100">
+                        Login via Google
+                    </button>
+
+                    <div class="text-center mt-3 small">
+                        Do you have an Account?
+                        <a href="#" class="text-success text-decoration-none">
+                            Sign In
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById("signupForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        alert("Signup Successful!");
+    });
+</script>
+
+</body>
+</html>
